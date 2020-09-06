@@ -14,98 +14,133 @@
 }
 
 *,
-*::before,/*наследует стиль от элемента к которому добавляется*/
+*::before,
+/*наследует стиль от элемента к которому добавляется*/
 *::after {
   /* создаёт псевдоэлемент после содержимого элемента. Не у всех элементов есть собственное содержимое, поэтому ::after не даёт результата для <img>, <input> и ряда других элементов.*/
-  margin: 0; /*это внешний отступ на всех 4 сторонах*/
-  padding: 0; /*задает отступ от содержимого до края блока*/
-  box-sizing: border-box; /*размер коробки: рамка-рамка;*/
+  margin: 0;
+  /*это внешний отступ на всех 4 сторонах*/
+  padding: 0;
+  /*задает отступ от содержимого до края блока*/
+  box-sizing: border-box;
+  /*размер коробки: рамка-рамка;*/
 }
 
 body {
-  font-family: Roboto, sans-serif; /*шрифт*/
-  font-weight: 400; /*насыщенность шрифта*/
+  font-family: Roboto, sans-serif;
+  /*шрифт*/
+  font-weight: 400;
+  /*насыщенность шрифта*/
   color: var(--primary-text-color);
-  letter-spacing: 0.03em; /*сгущенность шрифра*/
-  background-color: var(--primary-gov-color); /*цвет фона*/
+  letter-spacing: 0.03em;
+  /*сгущенность шрифра*/
+  background-color: var(--primary-gov-color);
+  /*цвет фона*/
 }
 
 .cape {
-  list-style: none; /*стиль маркера, тут выбран без подчеркивания*/
+  list-style: none;
+  /*стиль маркера, тут выбран без подчеркивания*/
 }
 
 a {
-  display: block; /*сделать блочным*/
-  text-decoration: none; /*убрали подчеркивание ссылки*/
+  display: block;
+  /*сделать блочным*/
+  text-decoration: none;
+  /*убрали подчеркивание ссылки*/
 }
 
 button {
-  cursor: pointer; /*чтобы кнопка выделялась при нажатии*/
-  display: inline-block; /*изменили на строчно-блочный, для придания формы кнопке */
+  cursor: pointer;
+  /*чтобы кнопка выделялась при нажатии*/
+  display: inline-block;
+  /*изменили на строчно-блочный, для придания формы кнопке */
 }
 
 img {
-  display: block; /*Превращение тега <img> в блочный элемент*/
-  max-width: 100%; /*максимальная ширина*/
-  object-fit: cover; /*отрезаем стороны img сoхраняя соотношение сторон */
+  display: block;
+  /*Превращение тега <img> в блочный элемент*/
+  max-width: 100%;
+  /*максимальная ширина*/
+  object-fit: cover;
+  /*отрезаем стороны img сoхраняя соотношение сторон */
 }
 
 address {
-  font-style: normal; /*стиль шрифта*/
+  font-style: normal;
+  /*стиль шрифта*/
 }
 
 .container {
-  width: 1200px; /*ширина*/
-  padding: 0 15px; /*отступ от содержимого до края блока*/
+  width: 1200px;
+  /*ширина*/
+  padding: 0 15px;
+  /*отступ от содержимого до края блока*/
   margin: 0 auto;
   /*это внешний отступ на всех 4 сторонах*/
 }
 
 .scrit {
   position: absolute;
-  clip-path: rect(1px, 1px, 1px, 1px); /*область для скрытого заголовка*/
+  clip-path: rect(1px, 1px, 1px, 1px);
+  /*область для скрытого заголовка*/
   padding: 0;
-  border: 0; /*убирает рамку*/
-  height: 1px; /*высота*/
-  width: 1px; /*ширина*/
+  border: 0;
+  /*убирает рамку*/
+  height: 1px;
+  /*высота*/
+  width: 1px;
+  /*ширина*/
   overflow: hidden;
 }
 
 /* Cтилизация заголовка*/
 
 header {
-  padding-top: 35px; /*отступ от верхнего края*/
-  padding-bottom: 29px; /*отступ от нижнего края содержимог оелемента*/
+  padding-top: 35px;
+  /*отступ от верхнего края*/
+  padding-bottom: 29px;
+  /*отступ от нижнего края содержимог оелемента*/
   background-color: var(--primary-gov-color);
 }
 
 header .container {
-  display: flex; /*поставили в ряд из привет!*/
-  align-items: center; /*выравнивам по центру*/
+  display: flex;
+  /*поставили в ряд из привет!*/
+  align-items: center;
+  /*выравнивам по центру*/
 }
 
 /* Стилизация логотипа*/
 
 .logo {
-  font-family: Raleway, sans-serif; /*шрифт*/
-  font-weight: 700; /*насыщенность шрифта*/
-  font-size: 26px; /*размер шрифта*/
-  line-height: 1.19; /*междустрочный интервал*/
+  font-family: Raleway, sans-serif;
+  /*шрифт*/
+  font-weight: 700;
+  /*насыщенность шрифта*/
+  font-size: 26px;
+  /*размер шрифта*/
+  line-height: 1.19;
+  /*междустрочный интервал*/
 }
 
 .logo span {
-  color: var(--accent-color); /*цвет*/
+  color: var(--accent-color);
+  /*цвет*/
 }
 
 .top .logo {
-  padding-top: 27px; /*отступ от верхнего края*/
-  padding-bottom: 22px; /*отступ от нижнего края содержимог елемента*/
+  padding-top: 27px;
+  /*отступ от верхнего края*/
+  padding-bottom: 22px;
+  /*отступ от нижнего края содержимог елемента*/
   margin-right: 93px;
   color: var(--title-text-color);
 }
 
 .bottom .logo {
-  margin-bottom: 20px; /*отступа от нижнего края */
+  margin-bottom: 20px;
+  /*отступа от нижнего края */
   color: var(--primary-gov-color);
 }
 
@@ -116,7 +151,7 @@ header .container {
   align-items: center;
 }
 
-.site-nav > .cape {
+.site-nav>.cape {
   display: flex;
 }
 
@@ -165,6 +200,13 @@ header .container {
   margin-left: 50px;
 }
 
+.nav-svjaz-convert {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 /*Cтилизация страницы студия*/
 h1,
 h2,
@@ -206,7 +248,8 @@ p {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase; /*делаем, чтоб все буквы были заглавными*/
+  text-transform: uppercase;
+  /*делаем, чтоб все буквы были заглавными*/
 
   color: var(--primary-gov-color);
 }
@@ -214,7 +257,8 @@ p {
 .geroj-cnopca {
   display: block;
   width: 200px;
-  min-height: 50px; /*минимальная высота*/
+  min-height: 50px;
+  /*минимальная высота*/
   margin: 0 auto;
   padding: 10px 31px;
 
@@ -227,14 +271,17 @@ p {
   color: var(--primary-gov-color);
   background-color: var(--accent-color);
 
-  border-radius: 4px; /*округляем края кнопки*/
-  border-width: 0; /*толщина*/
+  border-radius: 4px;
+  /*округляем края кнопки*/
+  border-width: 0;
+  /*толщина*/
 }
 
 /* Cтилизация наших преимуществ */
 
 .rabot {
-  padding-top: 94px; /*Устанавливает значение поля от верхнего края содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое*/
+  padding-top: 94px;
+  /*Устанавливает значение поля от верхнего края содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое*/
   padding-bottom: 94px;
 }
 
@@ -274,7 +321,8 @@ p {
 .cartinca-title {
   margin-bottom: 50px;
   text-align: center;
-  font-size: 36px; /* размер шрифта*/
+  font-size: 36px;
+  /* размер шрифта*/
   line-height: 1.17;
 }
 
@@ -285,7 +333,8 @@ p {
 
 .cartinca .cape {
   display: flex;
-  flex-wrap: wrap; /*Флексы выстраиваются в несколько строк*/
+  flex-wrap: wrap;
+  /*Флексы выстраиваются в несколько строк*/
   margin: -15px;
 }
 
@@ -304,7 +353,8 @@ p {
 
 .comanda .cape {
   display: flex;
-  justify-content: space-between; /*задает отступы между картинками*/
+  justify-content: space-between;
+  /*задает отступы между картинками*/
 }
 
 .comanda-photo {
@@ -323,7 +373,8 @@ p {
   padding-bottom: 30px;
   background: var(--primary-gov-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); /*добавляем тень*/
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /*добавляем тень*/
 }
 
 .comanda-photo img {
@@ -369,7 +420,8 @@ bottom-svjaz a {
 /*.carta {
   color: var(--primary-gov-color);*/
 
-.bottom-svjaz a:hover,/*фокус и ховер*/
+.bottom-svjaz a:hover,
+/*фокус и ховер*/
 .bottom-svjaz a:focus {
   color: var(--accent-color);
 }
@@ -398,7 +450,8 @@ header {
 
 .filter {
   display: flex;
-  justify-content: center; /*выравнивание картинок по центру относительно всего контейнера*/
+  justify-content: center;
+  /*выравнивание картинок по центру относительно всего контейнера*/
   margin-bottom: 34px;
 }
 
@@ -422,7 +475,8 @@ header {
   margin-right: 8px;
 }
 
-.filter-cnopca:hover,/*ховер и фокус*/
+.filter-cnopca:hover,
+/*ховер и фокус*/
 .filter-cnopca:focus {
   color: var(--primary-gov-color);
   background-color: var(--accent-color);
@@ -446,6 +500,7 @@ header {
   margin: 15px;
   padding-bottom: 20px;
 }
+
 .projeckt-stroca img {
   /*display: block;*/
   margin-bottom: 20px;
