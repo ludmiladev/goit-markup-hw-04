@@ -458,7 +458,7 @@ p {
   border-radius: 50%;
 }
 
-.social-list-item:not {
+.social-list-item {
   margin-right: 10px;
 }
 
