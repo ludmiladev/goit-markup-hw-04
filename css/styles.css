@@ -26,6 +26,8 @@
   /*размер коробки: рамка-рамка;*/
 }
 
+
+
 body {
   font-family: Roboto, sans-serif;
   /*шрифт*/
@@ -170,6 +172,11 @@ header .container {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+.site-nav .link.current::after {
+  color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .site-nav .link.current {
@@ -434,6 +441,84 @@ p {
   line-height: 1.19;
 }
 
+/*Cтилизация соц сетей*/
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-item:not {
+  margin-right: 10px;
+}
+
+.social-list-item-svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+
+}
+
+.social-list-item-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-item-link:hover .social-list-item-svg {
+  fill: var(primary-gov-color);
+}
+
+
+
+/*Cтилизация секции наши клиенты*/
+
+.clients-postojannie {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.clients .cape {
+  display: flex;
+  justify-content: center;
+}
+
+.clients .top-menu {
+  margin-right: 30px;
+}
+
+.clients .list-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+}
+
+.clients .list-item-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clients .list-item-link-svg {
+  fill: #afb1b8;
+}
+
+.clients .list-item-link:hover .list-item-link-svg {
+  fill: var(--accent-color);
+}
+
+
 /* Cтилизация футера */
 
 /* Стилизация контактных данных футера: адрес, тел , емейл */
@@ -473,6 +558,46 @@ bottom-svjaz a {
 .bottom-svjaz a:focus {
   color: var(--accent-color);
 }
+
+.bottom-cozseti {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-gov-color);
+}
+
+.bottom-cozseti .social-list-item-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bottom-cozseti .social-list-item-svg {
+  fill: var(--primary-gov-color);
+}
+
+.bottom-cozseti .social-list-item-link:hover {
+  background-color: var(--accent-color);
+}
+
+.bottom-cozseti .social-list-item-link:hover .social-list-item-svg {
+  fill: var(--primary-gov-color);
+}
+
+.bottom-prisoedenajtes {
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-gov-color);
+}
+
+
+
 
 /*Стилизация макета портфолио*/
 h1,
