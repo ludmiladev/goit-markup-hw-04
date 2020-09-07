@@ -540,7 +540,14 @@ p {
 }
 
 .bottom-cell {
+  margin-top: 72px;
+  margin-bottom: 100 px;
   width: 270px;
+
+}
+
+section {
+  display: block;
 }
 
 bottom-svjaz a {
