@@ -317,6 +317,33 @@ p {
   margin-right: 30px;
 }
 
+.pros .top-menu::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pros-microscop::before {
+  background-image: url(../images/microscop.svg);
+}
+
+.pros-hcasi::before {
+  background-image: url(../images/hcasi.svg);
+}
+
+.pros-nout::before {
+  background-image: url(../images/nout.svg);
+}
+
+.pros-cosmonavt::before {
+  background-image: url(../images/cosmonavt.svg);
+}
+
 .pros-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -330,6 +357,7 @@ p {
 .pros-absaz {
   font-size: 14px;
   line-height: 1.71;
+  color: var(--primary-text-color);
 }
 
 /* Стилизация секции чем мы занимаемся*/
