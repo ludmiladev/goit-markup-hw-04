@@ -619,7 +619,7 @@ bottom-svjaz a {
 .bottom-prisoedenajtes {
   font-weight: 700;
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -689,9 +689,9 @@ header {
 /* Стилизация раздела наши проекты */
 
 .projeckt {
-  display: inline-block;
+  display: flex;
   flex-wrap: wrap;
-  /* margin: -15px;*/
+  margin: -15px;
   list-style: none;
 }
 
