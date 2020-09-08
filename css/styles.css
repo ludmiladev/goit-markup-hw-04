@@ -188,6 +188,9 @@ header .container {
 .nav-svjaz {
   display: flex;
   margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
 }
 
 .nav-svjaz a {
@@ -212,8 +215,6 @@ header .container {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
-  id="icon-convert"viewBox="0 0 32 32"><path "d="M29 4H3C1.346 4 0 5.346 0 7v18c0 1.654 1.346 3 3 3h26c1.654 0 3-1.346 3-3V7c0-1.654-1.346-3-3-3zm0 2c.136 0 .266.028.384.078L16 17.678 2.616 6.078A.971.971 0 013 6h26zm0 20H3a1 1 0 01-1-1V8.19l13.344 11.566a.997.997 0 001.313-.001l-.001.001L30 8.19V25a1 1 0 01-1 1z"/></id=>
 
 }
 
